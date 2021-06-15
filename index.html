@@ -8,6 +8,12 @@
     <title>Pagina Pessoal</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400, 700" rel="stylesheet" />
     <style>
+        a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
         body, html {
             padding: 0;
             margin: 0;
@@ -20,20 +26,31 @@
             height: 100px;
         }
 
+        .menu-items {
+            display: flex;
+        }
+
+        .menu-items a{
+            padding: 15px;
+            font-size: 16px;
+            display: block;
+        }
+
         nav {
             width: 1100px;
             height: 100%;
-            margin: 0 auto;            
+            margin: 0 auto;
+            display: flex; 
+            align-items: center;
+            justify-content: space-between;           
         }
 
         .navbar-brand {
             font-size: 30px;
         }
 
-        a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
+        ul {
+            list-style-type: none;
         }
     </style>
 </head>
@@ -41,6 +58,11 @@
     <header>
         <nav>
             <a href="#" class="navbar-brand">Fabio Rezende</a>
+            <ul class="menu-items">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>    
 </body>
