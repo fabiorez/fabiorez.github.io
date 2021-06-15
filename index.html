@@ -1,141 +1,49 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 
-<html lang="pt_BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Pessoal</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400, 700" rel="stylesheet" />
-    <style>
-        a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        body, html {
-            padding: 0;
-            margin: 0;
-            font-family: "Montserrat";
-            font-weight: 700;
-        }
-
-        header {
-            background-color: #2c3e50;
-            height: 100px;
-            position: fixed;
-            width: 100%;
-        }
-
-        .menu-items {
-            display: flex;
-        }
-
-        .menu-items a{
-            padding: 15px;
-            font-size: 16px;
-            display: block;
-        }
-
-        nav {
-            width: 1100px;
-            height: 100%;
-            margin: 0 auto;
-            display: flex; 
-            align-items: center;
-            justify-content: space-between;           
-        }
-
-        .navbar-brand {
-            font-size: 30px;
-        }
-
-        .portfolio {
-            width: 1200px;
-            height: 100%;
-            margin: 0 auto;
-        }
-
-        .portfolio-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .portfolio-container img {
-            width: 330px;
-            height: 240px;
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-        .portfolio-title {
-            font-size: 50px;
-            text-transform: uppercase;
-            text-align: center;
-            color: #2c3e50
-        }
-
-        .profile {
-            text-align: center;
-            color: #fff;
-        }
-
-        .profile img {
-            width: 240px;
-        }
-
-        .profile-container {
-            background-color: #1abc9c;
-            display: flex;
-            justify-content: center;
-            padding-top: 200px;
-            padding-bottom: 50px;
-        }
-
-        .profile-description {
-            font-size: 25px;
-        }
-
-        .profile-title {
-            font-size: 65px;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu perfil</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">  
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#" class="navbar-brand">Fabio Rezende</a>
-            <ul class="menu-items">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>  
-    <section class="profile-container">
-        <div class="profile">
-            <img src="images/profile2.svg" alt="Profile">
-            <h1 class="profile-title">Fabio Rezende</h1>
-            <h3 class="profile-description">Frontend - Backend - Javascript</h3>
-        </div>
-    </section>  
-    <section class="portfolio">
-        <h1 class="portfolio-title">Portfolio</h1>
-        <div class="portfolio-container">
-            <img src="images/portfolio1.png" alt="">
-            <img src="images/portfolio2.png" alt="">
-            <img src="images/portfolio3.png" alt="">
-            <img src="images/portfolio4.png" alt="">
-            <img src="images/portfolio5.png" alt="">
-            <img src="images/portfolio6.png" alt="">
-        </div>
 
-    </section>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="navbar-brand">Fabio Rezende</a>
+      <ul class="menu-items">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li>
+          <a href="https://github.com/fabiorez" target="_blank">
+            About
+          </a>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="profile-container">
+    <div class="profile">
+      <div class="profile-avatar">
+        <img src="images/funko-eu.png" alt="Meu perfil">
+      </div>
+      <h1 class="profile-title">Fabio Rezende</h1>
+      <h3 class="profile-description">Backend - Frontend - JavaScript</h3>
+    </div>
+  </section>
+  <div id="portfolio">
+    <h1 class="portfolio-title">Portfolio</h1>
+    <div class="portfolio-container">
+      <img class="portfolio-item" src="images/portfolio1.png" alt="Portfolio 1">
+      <img class="portfolio-item" src="images/portfolio2.png" alt="Portfolio 2">
+      <img class="portfolio-item" src="images/portfolio3.png" alt="Portfolio 3">
+      <img class="portfolio-item" src="images/portfolio4.png" alt="Portfolio 4">
+      <img class="portfolio-item" src="images/portfolio5.png" alt="Portfolio 5">
+      <img class="portfolio-item" src="images/portfolio6.png" alt="Portfolio 6">
+    </div>
+  </div>
 </body>
+
 </html>
