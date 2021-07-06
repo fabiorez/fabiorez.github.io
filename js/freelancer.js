@@ -61,3 +61,12 @@
   });
 
 })(jQuery); // End of use strict
+//quando clicar no nav-item, remover a classe show do id navbarResponsive 
+const links = document.querySelectorAll('.nav-item');
+const menuHamburguer = document.querySelector('#navbarResponsive');
+
+for(const link in links) {
+  link.addEventListener('click', function() {
+    menuHamburguer.classList.remove('show');
+  })
+}
