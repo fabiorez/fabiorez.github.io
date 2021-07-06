@@ -9,7 +9,6 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 71);
-Alert("teste");
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -62,3 +61,12 @@ Alert("teste");
   });
 
 })(jQuery); // End of use strict
+
+const links = document.querySelectorAll('.nav-item');
+const menu = document.querySelector('#navbarResponsive');
+
+for (const link of links) {
+  link.addEventListener('click', function () {
+    menu.classList.remove('show')
+  })
+}
