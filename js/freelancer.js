@@ -11,14 +11,10 @@
       var target = $(this.hash)
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']')
       if (target.length) {
-        $('html, body').animate(
-          {
-            scrollTop: target.offset().top - 71
-          },
-          1000,
-          'easeInOutExpo'
-        )
-        return false
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 71);
+        }, 1000, "easeInOutExpo");
+        return false;
       }
     }
   })
@@ -63,19 +59,23 @@
   $(window).scroll(navbarCollapse)
 
   // Floating label headings for the contact form
-  $(function () {
-    $('body')
-      .on('input propertychange', '.floating-label-form-group', function (e) {
-        $(this).toggleClass(
-          'floating-label-form-group-with-value',
-          !!$(e.target).val()
-        )
-      })
-      .on('focus', '.floating-label-form-group', function () {
-        $(this).addClass('floating-label-form-group-with-focus')
-      })
-      .on('blur', '.floating-label-form-group', function () {
-        $(this).removeClass('floating-label-form-group-with-focus')
-      })
+  $(function() {
+    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+      $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+    }).on("focus", ".floating-label-form-group", function() {
+      $(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function() {
+      $(this).removeClass("floating-label-form-group-with-focus");
+    });
+  });
+
+})(jQuery); // End of use strict
+
+const links = document.querySelectorAll('.nav-item');
+const menu = document.querySelector('#navbarResponsive');
+
+for (const link of links) {
+  link.addEventListener('click', function () {
+    menu.classList.remove('show')
   })
-})(jQuery) // End of use strict
+}
