@@ -13,24 +13,21 @@
 
 <body>
     <!-- Cabecalho -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <div id="logo">
-                    <img src="img/logo.png" alt="logo com nome fabio para seu portfolio" width="100px">
-                </div>
-                <nav>
-                    <input type="checkbox" id="check">
-                    <label for="check">&#x2630;</label>
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#"></a>Portfolio</li>
-                        <li><a href="#"></a>Sobre</li>
-                        <li><a href="#"></a>Contato</li>
-                    </ul>
-                </nav>
+    <header id="inicio">
+        <div class="container Flex">
+            <div id="logo">
+                <img src="img/logo.png" alt="logo com circulo vermelho e borda preta" width="100px">
             </div>
-
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- Destaque -->
@@ -41,7 +38,7 @@
         </div>
     </main>
     <!-- Portfolio -->
-    <section>
+    <section id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
             <h3>DSVendas</h3>
@@ -49,23 +46,19 @@
         </div>
     </section>
     <!-- Sobre -->
-    <section>
+    <section id="sobre">
         <div class="container">
             <h2>Sobre</h2>
         </div>
     </section>
-    <!-- Contato -->
-    <section>
-        <div class="container">
-            <h2>Contato</h2>
-        </div>
-    </section>
     <!-- Rodape -->
-    <footer>
+    <footer id="contato">
         <div class="container">
 
         </div>
     </footer>
+    <a href="#inicio" id="botaoTopo"><img src="img/topo.png"
+            alt="botao com seta apontando para cima que envia o site para o inicio"></a>
 </body>
 
 </html>
